@@ -1,13 +1,11 @@
 from config import db
-from flask import request, jsonify
-from app import app 
 
-class Customer(db.Model):
-    id = db.Column(db.Integer, primary_key = True, nullable = False)
-    name  =  db.Column(db.String(155), nullable = False)
-    deliveryAddress  =  db.Column(db.String(155), nullable = False)
-    contact  =  db.Column(db.String(155), nullable = False)
-    active  =  db.Column(db.Integer, nullable = False)
+class Customer (db.Model):
+    id = db.Column(db.Integer, primary_key = True)
+    name = db.Column(db.String(120), nullable = False)
+    deliveryAddress = db.Column(db.String(120), nullable = False)
+    contact = db.Column(db.String(120), nullable = True)
+    active = db.Column(db.Boolean, nullable = False)
 
 
 """

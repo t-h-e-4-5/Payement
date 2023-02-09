@@ -1,4 +1,4 @@
-POST http://127.0.0.1:5000/c/add
+POST http://127.0.0.1:5000/127.0.0.1:5000/customer/add
 
 Content-Type: application/json
 {
